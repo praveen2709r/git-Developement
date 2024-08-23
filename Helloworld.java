@@ -1,6 +1,7 @@
-publpublic class Helloworld{
-publpublic static void main(String[] args){System.out.println("hello world");}}
-}
+public class Helloworld{
+public static void main(String[] args){
+    System.out.println("hello world");
+}}
 
 
-Sys
+
