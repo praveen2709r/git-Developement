@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="student" class="org.example.Student" autowire="byType">
+<!--    autowire byName search for the com name of bean-->
+<!--    autowire byType search for the computer object type of the bean-->
+<!--    setter Injection-->
+<!--    <property name="age" value="27"/>-->
+<!--    <property name="com" ref="laptop"/>-->
+
+</bean>
+<bean id="com" class="org.example.Laptop" primary="true"/>
+<!--    primary indicated this bean needs to be used-->
+    <bean id="desktop" class="org.example.Desktop"/>
+</beans>
